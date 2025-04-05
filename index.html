@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>ART PORTFLIO</title>
+        <style>
+        body {
+            margin: 0;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        #container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        #header {
+            background-color: #e0dede;
+            padding: 20px;
+        }
+
+        #header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #333;
+        }
+
+        #nav {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        #nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+        }
+
+        #nav a:hover {
+            color: #000;
+        }
+
+        button {
+            margin: 30px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #8fb3a2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #images {
+            display: none;
+            margin-top: 20px;
+        }
+
+        #images img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+    <script>
+        function showImages() {
+            document.getElementById('images').style.display = 'block';
+            document.getElementById('images').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Ghibli Art</h1>
+            <ul id="nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">IMAGES</a></li>
+            </ul>
+        </div>
+
+        <button onclick="showImages()">Go to Images</button>
+
+        <div id="images">
+            <img src="./images/1.jpeg" alt="art 1">
+            <img src="./images/2.jpeg" alt="art 2">
+            <img src="./images/3.jpeg" alt="art 3">
+            <img src="./images/4.jpeg" alt="art 4">
+            <img src="./images/5.jpeg" alt="art 5">
+            <img src="./images/6.jpeg" alt="art 6">
+            <img src="./images/7.jpeg" alt="art 7">
+            <img src="./images/8.jpeg" alt="art 8">
+        </div>
+    </div>
+</body>
+</html>
+    </body>
+</html>
